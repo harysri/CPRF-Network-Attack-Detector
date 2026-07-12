@@ -1,5 +1,6 @@
 import React from "react";
-import { Shield, Database, BrainCircuit } from "lucide-react";
+import { Shield, Database, BrainCircuit, BookOpen } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -24,6 +25,27 @@ const Footer = () => {
               <BrainCircuit className="w-3.5 h-3.5" />
               <span>Class Probability Random Forest</span>
             </div>
+          </div>
+          {/* Documentation */}
+          <div className="flex items-center gap-4 text-xs text-slate-500">
+            <a
+              href="https://github.com/harysri/CPRF-Network-Attack-Detector/blob/main/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-500 hover:text-slate-400 transition-colors"
+            >
+              <BookOpen className="inline-block w-4 h-4 ml-1" />
+              <span className="ml-1">Documentation</span>
+            </a>
+            <a
+              href="https://github.com/harysri/CPRF-Network-Attack-Detector"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-500 hover:text-slate-400 transition-colors"
+            >
+              <FaGithub className="inline-block w-4 h-4 mr-1" />
+              GitHub
+            </a>
           </div>
 
           {/* Copyright */}
