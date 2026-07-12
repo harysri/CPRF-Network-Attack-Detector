@@ -66,5 +66,4 @@ runs/
 checkpoints/
 tensorboard/
 
-# ── Project-Specific ──────────────────────────────
-screenshots/
+
