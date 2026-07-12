@@ -1,0 +1,70 @@
+# ── Dependencies ──────────────────────────────────
+node_modules/
+.venv/
+venv/
+env/
+
+# ── Environment & Secrets ─────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# ── Build Outputs ─────────────────────────────────
+dist/
+build/
+*.tsbuildinfo
+
+# ── Logs & Debug ─────────────────────────────────
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Python Cache ──────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# ── Vite / Rollup Cache ───────────────────────────
+node_modules/.vite/
+
+# ── IDE / Editor ──────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── OS Files ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.dll
+*.so
+
+# ── ML / Training Outputs (future use) ────────────
+*.pkl
+*.h5
+*.pt
+*.pth
+mlruns/
+runs/
+checkpoints/
+tensorboard/
+
+# ── Project-Specific ──────────────────────────────
+screenshots/
