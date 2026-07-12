@@ -116,7 +116,7 @@ Users upload a CSV file containing network flow features; the backend runs infer
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/network-attack-detection.git
+git clone https://github.com/harysri/network-attack-detection.git
 cd network-attack-detection
 ```
 
@@ -384,7 +384,7 @@ Deploy the FastAPI server to **Railway**, **Render**, **Fly.io**, or **AWS ECS**
 
 ## 👤 Author
 
-**Your Name**
+**Srihari Satheeshan**
 
 - GitHub: [@harysri](https://github.com/harysri)
 - Email: sriharisatheeshan820@gmail.com
