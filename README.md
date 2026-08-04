@@ -31,7 +31,6 @@
 - [Folder Structure](#-folder-structure)
 - [API Endpoints](#-api-endpoints)
 - [Usage Guide](#-usage-guide)
-- [Deployment](#-deployment)
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
 
@@ -323,49 +322,6 @@ You can also call the API directly:
 curl -X POST http://localhost:8000/predict \
   -F "file=@traffic_sample.csv"
 ```
-
----
-
-## ☁️ Deployment
-
-### Frontend (Static Build)
-
-```bash
-cd client
-npm run build      # outputs to client/dist/
-```
-
-Deploy the `dist/` folder to any static host: **Vercel**, **Netlify**, **Cloudflare Pages**, or **GitHub Pages**.
-
-### Backend (FastAPI)
-
-**Option 1 — Uvicorn + Process Manager**
-
-```bash
-cd server
-uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
-```
-
-**Option 2 — Docker**
-
-```dockerfile
-FROM python:3.13-slim
-WORKDIR /app
-COPY server/ .
-RUN pip install -r requirements.txt
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
-
-**Option 3 — Cloud Platforms**
-
-Deploy the FastAPI server to **Railway**, **Render**, **Fly.io**, or **AWS ECS**.
-
-> ⚠️ **Production Checklist:**
->
-> - Tighten CORS origins in `main.py`
-> - Use environment variables for secrets
-> - Add authentication (see Future Improvements)
-> - Enable HTTPS behind a reverse proxy (NGINX / Caddy)
 
 ---
 
