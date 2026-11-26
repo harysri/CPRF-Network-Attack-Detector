@@ -40,7 +40,7 @@
 
 **CPRF Network Attack Detector** is a full‑stack intrusion detection system that classifies network traffic into seven categories using a **Class Probability Random Forest (CPRF)** model trained on the **CICIDS2017** benchmark dataset.
 
-Users upload a CSV file containing network flow features; the backend runs inference through a pre‑trained Random Forest classifier and returns per‑record predictions with confidence scores and class‑probability breakdowns — all displayed in a polished, dark‑themed dashboard.
+Users upload a CSV file containing network flow features; the backend runs inference through a pre‑trained Random Forest classifier and returns per‑record predictions with confidence scores and class‑probability breakdowns. Results are displayed in a responsive dashboard with a light/dark theme toggle.
 
 ---
 
@@ -54,7 +54,9 @@ Users upload a CSV file containing network flow features; the backend runs infer
 | **Visual Probability Bars**    | Per‑class probability bars for interpretable, transparent results                                                  |
 | **Threat Level Indicators**    | Color‑coded badges: Safe (🟢), Warning (🟡), Critical (🔴)                                                         |
 | **Summary Statistics**         | Aggregate attack counts for a quick overview of uploaded traffic                                                   |
-| **Dark‑Themed UI**             | Modern, responsive interface built with Tailwind CSS and Lucide icons                                              |
+| **Light & Dark Theme**         | Toggle between themes from the navigation bar                                                                     |
+| **Responsive UI**              | Adaptive navigation and layouts built with Tailwind CSS and Lucide icons                                           |
+| **Reduced-Motion Support**     | Home-page animations respect the visitor's reduced-motion preference                                               |
 | **REST API**                   | Simple `POST /predict` endpoint for programmatic integration                                                       |
 
 ---
@@ -192,6 +194,9 @@ network-attack-detection/
 │   │   │   ├── hero.png
 │   │   │   ├── react.svg
 │   │   │   └── vite.svg
+│   │   ├── context/
+│   │   │   ├── ThemeContext.jsx
+│   │   │   └── theme-context.js
 │   │   ├── Componets/
 │   │   │   ├── Footer.jsx
 │   │   │   └── Navbar.jsx
